@@ -1,3 +1,4 @@
+import { ResponseModel } from "../../models/dtomodels/responsemodel";
 import UserDTO from "../../models/dtomodels/userdto";
 
 /**
@@ -9,6 +10,6 @@ import UserDTO from "../../models/dtomodels/userdto";
      * 
      * @param userDto 
      */
-    create(userDto: UserDTO)
+    create(userDto: UserDTO):Promise<ResponseModel<UserDTO>>
 
 }

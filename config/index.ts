@@ -1,5 +1,5 @@
 let config = {
-    dbUrl: process.env.DBURL || "mongodb+srv://test1234:test1234@cluster0.wcdpm.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+    dbUrl: process.env.DBURL || "mongodb+srv://test1234:test1234@cluster0.wcdpm.mongodb.net/servicerepo?retryWrites=true&w=majority",
     port: process.env.PORT || 4000,
     env: process.env.NODE_ENV || "development",
     logDir: process.env.LOGDIR || "logs",

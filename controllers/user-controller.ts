@@ -10,11 +10,10 @@ function getUserService(): IUserService {
 }
 const userService = getUserService();
 
-router.post('/', (req: any, res: any) => {
-    console.log(req.body)
+router.post('/', async(req: any, res: any) => {
     const { password, email, firstName, lastName } = req.body
-    let result = userService.create({ password, email, firstName, lastName })
-    console.log(result)
+    let result = await userService.create({ password, email, firstName, lastName })
+    res.send(result)
 })
 
 
