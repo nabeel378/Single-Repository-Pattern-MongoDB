@@ -92,7 +92,7 @@ export default abstract class BaseRepository<T> implements IBaseRepository<T> {
             .find(query, projection, options)
             .sort(sort)
             .select({ __v: 0 })
-            .exec();
+            // .exec()
     }
 
     /**
