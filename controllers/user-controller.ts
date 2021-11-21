@@ -12,7 +12,7 @@ const userService = getUserService();
 
 
 router.post('/', async(req: any, res: any) => {
-    const { password, email, firstName, lastName } = req
+    const { password, email, firstName, lastName } = req.body
     let result = await userService.create({ password, email, firstName, lastName })
     res.send(result)
 })
